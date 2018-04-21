@@ -39,7 +39,7 @@
           defaultSymbol.outline.setStyle(SimpleLineSymbol.STYLE_NULL);
 
           //create renderer
-          var renderer = new UniqueValueRenderer(defaultSymbol, "SUB_REGION");
+          // var renderer = new UniqueValueRenderer(defaultSymbol, "SUB_REGION");
 
           //add symbol for each possible value
           // renderer.addValue("Pacific", new SimpleFillSymbol().setColor(new Color([255, 0, 0, 0.5])));
@@ -54,7 +54,7 @@
           
           var featureLayer = new FeatureLayer("https://gisdata.kingcounty.gov/arcgis/rest/services/OpenDataPortal/district___base/MapServer/2237/query?outFields=*&where=1%3D1");
           
-          featureLayer.setRenderer(renderer);
+          // featureLayer.setRenderer(renderer);
           map.addLayer(featureLayer);
         }
       });
